@@ -3,7 +3,7 @@ import React, {useState} from 'react';
 export const GlobalContext = React.createContext();
 
 const GlobalService = props => {
-  const [name, setName] = React.useState('my name');
+  const [name, setName] = useState('my name');
 
   return (
     <GlobalContext.Provider
