@@ -1,9 +1,9 @@
 import React, {useContext} from 'react';
-import GlobalService from '../GlobalContext';
+import {GlobalContext} from '../GlobalContext';
 import {StyleSheet, SafeAreaView, Text} from 'react-native';
 
 const Home = props => {
-  const name = useContext(GlobalService);
+  const {name, colorScheme} = useContext(GlobalContext);
 
   return (
     <SafeAreaView style={{flex: 1}}>
